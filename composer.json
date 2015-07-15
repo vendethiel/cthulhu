@@ -1,0 +1,27 @@
+
+{
+	"name": "vendethiel/cthulhu",
+	"type": "phpbb-extension",
+	"description": "A RPG system for phpBB",
+	"homepage": "none yet",
+	"version": "1.0.0",
+	"time": "14/07/2015",
+	"license": "GPL-2.0",
+	"authors": [{
+			"name": "Vendethiel",
+			"homepage": "https://github.com/vendethiel",
+			"role": "Lead Developer"
+		}],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"require-dev": {
+		"phpbb/epv": "dev-master"
+	},
+	"extra": {
+		"display-name": "Cthulhu",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.1.0-RC2,<3.2.*@dev"
+		}
+	}
+}

@@ -1,0 +1,3 @@
+vendethiel_cthulhu_controller:
+    path: /cthulhu/{name}
+    defaults: { _controller: vendethiel.cthulhu.controller:handle }

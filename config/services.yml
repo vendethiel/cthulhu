@@ -1,0 +1,15 @@
+services:
+    vendethiel.cthulhu.controller:
+        class: vendethiel\cthulhu\controller\main
+        arguments:
+            - @config
+            - @controller.helper
+            - @template
+            - @user
+    vendethiel.cthulhu.listener:
+        class: vendethiel\cthulhu\event\main_listener
+        arguments:
+            - @controller.helper
+            - @template
+        tags:
+            - { name: event.listener }
